@@ -1,6 +1,6 @@
 # Diapositivas — Angular
 
-- **`angular-slides.html`** — la presentación (16 diapositivas). Es un único archivo HTML; se abre con doble clic en cualquier navegador, sin instalar nada ni conexión (solo las fuentes se descargan de Google Fonts; si no hay internet usa fuentes del sistema).
+- **`angular-slides.html`** — la presentación (20 diapositivas). Es un único archivo HTML; se abre con doble clic en cualquier navegador, sin instalar nada ni conexión (solo las fuentes se descargan de Google Fonts; si no hay internet usa fuentes del sistema).
 - **`OUTLINE.md`** — guion y notas del orador, bloque por bloque. Es la base de contenido de las diapositivas.
 - **`GUION-HABLADO.md`** — el texto hablado, diapositiva por diapositiva.
 - **`GUIA-DE-ESTUDIO.md`** — para estudiar el tema y preparar el turno de preguntas: conceptos, tabla de equivalencias con React, respuestas a las 5 preguntas evaluativas, errores comunes y checklist.
