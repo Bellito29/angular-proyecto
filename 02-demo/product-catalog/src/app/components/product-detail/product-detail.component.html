@@ -1,0 +1,17 @@
+<div class="detail">
+  <a routerLink="/" class="back-link">&larr; Volver al catálogo</a>
+
+  <!-- @if / @else anidados: tres estados distintos (cargando, encontrado, no encontrado) -->
+  @if (loading()) {
+    <p>Cargando…</p>
+  } @else {
+    @if (product(); as p) {
+      <h1>{{ p.name }}</h1>
+      <p class="category">{{ p.category }}</p>
+      <p class="price">{{ p.price | currency:'COP':'symbol-narrow':'1.0-0' }}</p>
+      <p class="description">{{ p.description }}</p>
+    } @else {
+      <p>Producto no encontrado.</p>
+    }
+  }
+</div>

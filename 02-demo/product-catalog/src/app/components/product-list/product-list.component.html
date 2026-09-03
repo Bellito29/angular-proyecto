@@ -1,0 +1,23 @@
+<div class="catalog">
+  <h1>Catálogo de Productos</h1>
+
+  <!-- Two-way binding: [(ngModel)] escribe directamente en el signal filterText -->
+  <input
+    type="text"
+    placeholder="Buscar producto..."
+    [(ngModel)]="filterText"
+    class="search-input"
+  />
+
+  <!-- @for: nueva sintaxis de control de flujo (reemplaza *ngFor) -->
+  <!-- A cada tarjeta se le pasa el producto por su input(): [product]="product" -->
+  <ul class="product-grid">
+    @for (product of filteredProducts(); track product.id) {
+      <li>
+        <app-product-card [product]="product" />
+      </li>
+    } @empty {
+      <li class="empty">No se encontraron productos.</li>
+    }
+  </ul>
+</div>
