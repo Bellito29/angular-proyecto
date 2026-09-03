@@ -1,59 +1,71 @@
 # Diapositivas — Angular
 
-- **`angular-slides.html`** — la presentación (20 diapositivas). Es un único archivo HTML; se abre con doble clic en cualquier navegador, sin instalar nada ni conexión (solo las fuentes se descargan de Google Fonts; si no hay internet usa fuentes del sistema).
-- **`OUTLINE.md`** — guion y notas del orador, bloque por bloque. Es la base de contenido de las diapositivas.
-- **`GUION-HABLADO.md`** — el texto hablado, diapositiva por diapositiva.
-- **`GUIA-DE-ESTUDIO.md`** — para estudiar el tema y preparar el turno de preguntas: conceptos, tabla de equivalencias con React, respuestas a las 5 preguntas evaluativas, errores comunes y checklist.
+- **`angularr-slidess.html`** — presentación principal de Angular en formato HTML (**20 diapositivas**). Se abre directamente en el navegador y contiene navegación por teclado, modo pantalla completa, notas del orador, cambio de tema y opción de impresión/exportación a PDF.
+- La presentación incluye además una diapositiva con el enlace a la demostración en video de Angular CLI.
 
 ## Cómo presentar
 
-1. Abre `angular-slides.html` en el navegador (Chrome o Edge recomendado).
-2. Pulsa **F** para pantalla completa.
-3. Navega:
+1. Abre `angularr-slidess.html` en Chrome o Edge.
+2. Pulsa **F** para entrar en pantalla completa.
+3. Navega usando los controles disponibles:
 
 | Tecla | Acción |
 |---|---|
-| `→` · `Espacio` · `Page Down` · clic | Siguiente diapositiva |
-| `←` · `Page Up` | Diapositiva anterior |
-| `Inicio` / `Fin` | Primera / última |
-| `N` | Mostrar u ocultar las **notas del orador** de la diapositiva actual |
-| `F` | Pantalla completa |
+| `→` · `↓` · `Espacio` · `Page Down` · clic | Siguiente diapositiva |
+| `←` · `↑` · `Page Up` | Diapositiva anterior |
+| `Inicio` / `Home` | Primera diapositiva |
+| `Fin` / `End` | Última diapositiva |
+| `N` | Mostrar u ocultar las **notas del orador** |
+| `F` | Entrar o salir de pantalla completa |
 | `P` | Imprimir / exportar a PDF |
-| botón `◐` (abajo izq.) | Cambiar entre tema oscuro y claro |
+| botón `◐` | Cambiar entre tema oscuro y claro |
 
-La barra superior marca el avance y abajo a la derecha se ve el número de diapositiva (`03 / 16`). La URL guarda la diapositiva actual (`...#3`), así que si recargas no pierdes el sitio.
+La barra superior muestra el avance de la presentación y el contador inferior derecho indica la diapositiva actual sobre el total. La URL también guarda la posición mediante un hash (`#1`, `#2`, etc.), por lo que al recargar se conserva la diapositiva actual.
 
 ## Exportar a PDF
 
-1. Abre el archivo en el navegador y pulsa **P** (o `Ctrl/Cmd + P`).
-2. Destino: **Guardar como PDF**.
-3. Diseño: **Horizontal**. Márgenes: **Ninguno**. Activa **Gráficos de fondo**.
-4. Guardar. Cada diapositiva sale en una página.
+1. Abre `angularr-slidess.html` en el navegador.
+2. Pulsa **P** o usa `Ctrl + P`.
+3. Selecciona **Guardar como PDF**.
+4. Usa orientación **Horizontal**.
+5. Selecciona márgenes **Ninguno**.
+6. Activa **Gráficos de fondo**.
+7. Guarda el archivo.
 
-## Contenido (16 diapositivas)
+Cada diapositiva se exporta como una página independiente.
 
-Las diapositivas no llevan nombres: cada integrante toma el bloque o las diapositivas que prefiera. Los bloques son solo una agrupación temática.
+## Contenido (20 diapositivas)
+
+Las diapositivas están organizadas por bloques temáticos para llevar la exposición desde los conceptos básicos hasta la demostración práctica y el cierre.
 
 | # | Diapositiva | Bloque |
 |---|---|---|
-| 1 | Portada | — |
+| 1 | Portada — Angular | — |
 | 2 | Cómo va la sesión (agenda) | — |
-| 3 | ¿Qué es Angular? | 1 · Introducción y contexto |
-| 4 | Angular vs React (tabla) | 1 · Introducción y contexto |
-| 5 | Componentes y standalone | 2 · Arquitectura y binding |
-| 6 | Data binding | 2 · Arquitectura y binding |
-| 7 | Control de flujo `@for` / `@if` | 2 · Arquitectura y binding |
-| 8 | Servicios e inyección de dependencias | 3 · Servicios, HTTP y routing |
-| 9 | HttpClient y RxJS | 3 · Servicios, HTTP y routing |
-| 10 | Routing | 3 · Servicios, HTTP y routing |
-| 11 | Signals | 4 · Signals, CLI y demo |
-| 12 | Angular CLI | 4 · Signals, CLI y demo |
-| 13 | Demo — catálogo de productos | 4 · Signals, CLI y demo |
-| 14 | Conclusiones | 4 · Signals, CLI y demo |
-| 15 | Para practicar (5 preguntas evaluativas) | — |
-| 16 | Gracias / ¿Preguntas? | — |
+| 3 | ¿Qué es Angular? | 1 · Introducción |
+| 4 | Angular piensa en capas | 1 · Modelo mental |
+| 5 | Componentes y standalone | 2 · Arquitectura |
+| 6 | Archivos que vas a ver | 2 · Estructura del proyecto |
+| 7 | Data binding | 3 · Templates |
+| 8 | Control de flujo: `@for` / `@if` | 3 · Templates |
+| 9 | Formularios y validación | 3 · Formularios |
+| 10 | Servicios e inyección de dependencias | 4 · Servicios |
+| 11 | HttpClient y RxJS | 4 · Datos externos |
+| 12 | Routing | 4 · Navegación |
+| 13 | Signals | 4 · Reactividad |
+| 14 | Angular CLI | 5 · Herramientas |
+| 15 | Demostración en video de Angular CLI | 5 · Demo |
+| 16 | ¿Cuándo conviene Angular? | 5 · Criterio técnico |
+| 17 | Demo — catálogo de productos | 5 · Demo |
+| 18 | Conclusiones | Cierre |
+| 19 | Para practicar — preguntas evaluativas | — |
+| 20 | Gracias / ¿Preguntas? | — |
 
-## Antes de entregar
+## Enlace de la demostración de Angular CLI
 
-- Ajusta la fecha de la portada (diapositiva 1) si cambia.
-- El guion hablado, párrafo por párrafo, está en [`GUION-HABLADO.md`](GUION-HABLADO.md).
+La presentación incluye una diapositiva con el enlace al video de demostración:
+
+`https://youtu.be/DYKT6YRMkdU`
+
+El video muestra de forma práctica el uso de Angular CLI para crear y ejecutar un proyecto Angular. Durante la exposición debe utilizarse como apoyo y ser explicado por los integrantes del grupo.
+
