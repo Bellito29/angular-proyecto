@@ -23,8 +23,8 @@ La app es un catálogo de productos con dos vistas:
 
 1. Clona el repositorio y entra a la carpeta de la demo:
    ```bash
-   git clone https://github.com/jmrojas06/PresentacionCompu3Angular.git
-   cd PresentacionCompu3Angular/02-demo/product-catalog
+   git clone https://github.com/Bellito29/angular-proyecto.git
+   cd 02-demo/product-catalog
    ```
 2. Instala las dependencias:
    ```bash
